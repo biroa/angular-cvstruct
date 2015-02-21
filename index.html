@@ -25,18 +25,18 @@
 <![endif]-->
 
 <!-- Add your site or application content here -->
-<div class="container">
+<div class="container" ng-controller="MainCtrl as main">
     <div class="header">
     </div>
 
     <tabs>
-        <pane title="Resume" url="#!resume" ng-controller="MainCtrl as main">
+        <pane title="Resume" url="/">
             <div>Resume</div>
         </pane>
-        <pane title="Blog" url="#!blog" ng-controller="MainCtrl as main">
+        <pane title="Blog" url="/blog">
             <div>Blog</div>
         </pane>
-        <pane title="Contact" url="#!contact" ng-controller="MainCtrl as main">
+        <pane title="Contact" url="/contact">
             <div>Contact</div>
         </pane>
     </tabs>
@@ -76,6 +76,8 @@
 <!-- bower:js -->
 <script src="../bower_components/jquery/dist/jquery.js"></script>
 <script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="../bower_components/oclazyload/dist/ocLazyLoad.js"></script>
 <script src="../bower_components/json3/lib/json3.js"></script>
 <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script src="../bower_components/angular-resource/angular-resource.js"></script>
@@ -83,8 +85,7 @@
 <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
 <script src="../bower_components/angular-animate/angular-animate.js"></script>
 <script src="../bower_components/angular-touch/angular-touch.js"></script>
-<script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-<script src="../bower_components/oclazyload/dist/ocLazyLoad.js"></script>
+
 <!-- endbower -->
 <!-- endbuild -->
 

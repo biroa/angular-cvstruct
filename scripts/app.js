@@ -10,12 +10,12 @@
      */
     angular
         .module('publicHtmlApp', [
+            'oc.lazyLoad',
             'ngAnimate',
             'ngCookies',
             'ngResource',
             'ui.router',
             'ngSanitize',
-            'oc.lazyLoad',
             'ngTouch'
         ])
 
@@ -23,7 +23,7 @@
             $stateProvider.state('/', {
                 url: "/resume",
                 templateUrl: "main.html",
-                controller: "MainCtrl as main",
+                controller: "ResumeCtrl as resume",
                 resolve: {
                     store: function ($ocLazyLoad) {
                         return $ocLazyLoad.load(
