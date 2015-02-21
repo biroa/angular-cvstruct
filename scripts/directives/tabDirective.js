@@ -23,7 +23,7 @@ angular.module('publicHtmlApp', []).
             '<div class="tabbable">' +
             '<ul class="nav nav-tabs">' +
             '<li ng-repeat="pane in panes" ng-class="{active:pane.selected}">'+
-            '<a href="" ng-click="select(pane)">{{pane.title}}</a>' +
+            '<a ng-href="{{pane.url}}" ng-click="select(pane)">{{pane.title}}</a>' +
             '</li>' +
             '</ul>' +
             '<div class="tab-content" ng-transclude></div>' +
@@ -36,7 +36,7 @@ angular.module('publicHtmlApp', []).
             require: '^tabs',
             restrict: 'E',
             transclude: true,
-            scope: { title: '@' },
+            scope: { title: '@title', url: '@url' },
             link: function(scope, element, attrs, tabsCtrl) {
                 tabsCtrl.addPane(scope);
             },
