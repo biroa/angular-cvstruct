@@ -30,13 +30,13 @@
     </div>
 
     <tabs>
-        <pane title="Resume" url="#!resume">
+        <pane title="Resume" url="#!resume" ng-controller="MainCtrl as main">
             <div>Resume</div>
         </pane>
-        <pane title="Blog" url="#!blog">
+        <pane title="Blog" url="#!blog" ng-controller="MainCtrl as main">
             <div>Blog</div>
         </pane>
-        <pane title="Contact" url="#!contact">
+        <pane title="Contact" url="#!contact" ng-controller="MainCtrl as main">
             <div>Contact</div>
         </pane>
     </tabs>
@@ -83,7 +83,8 @@
 <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
 <script src="../bower_components/angular-animate/angular-animate.js"></script>
 <script src="../bower_components/angular-touch/angular-touch.js"></script>
-<script src="../bower_components/angular-route/angular-route.js"></script>
+<script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="../bower_components/oclazyload/dist/ocLazyLoad.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 

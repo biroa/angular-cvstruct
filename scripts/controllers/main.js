@@ -8,10 +8,8 @@
  * Controller of the publicHtmlApp
  */
 angular.module('publicHtmlApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+
+  .controller('MainCtrl', function () {
+        var homeStorage = this;
+        console.log('called');
   });
