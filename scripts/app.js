@@ -22,29 +22,15 @@
         .config(function($stateProvider) {
             $stateProvider.state('/', {
                 url: "/resume",
-                templateUrl: "main.html",
+                templateUrl: "pages/resume/resume.html",
                 controller: "ResumeCtrl as resume",
                 resolve: {
                     store: function ($ocLazyLoad) {
                         return $ocLazyLoad.load(
                             {
-                                name: "main",
-                                files: ["main.js"]
+                                name: "resume",
+                                files: ["pages/resume/resume.js"]
                             })
-                    }
-                }
-            })
-
-            $stateProvider.state('/blog', {
-                url: "/blog",
-                templateUrl: "blog.html",
-                controller: "BlogCtrl as blog",
-                resolve: {
-                    store: function ($ocLazyLoad) {
-                        return $ocLazyLoad.load({
-                            name: "about",
-                            files: ["about.js"]
-                        })
                     }
                 }
             })
