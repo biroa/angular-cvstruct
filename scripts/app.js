@@ -1,15 +1,14 @@
-(function () {
+(function() {
     'use strict';
 
     angular
         .module('publicHtmlApp', [
+            'ui.router',
             'oc.lazyLoad',
             'ngAnimate',
             'ngCookies',
             'ngResource',
-            'ui.router',
             'ngSanitize',
             'ngTouch'
-        ])
-
+        ]);
 })();

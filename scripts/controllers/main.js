@@ -1,13 +1,15 @@
 (function () {
     'use strict';
 
-angular.module('publicHtmlApp')
-    
-    .controller('MainCtrl', MainCtrl);
+    angular
+        .module('publicHtmlApp')
+        .controller('MainCtrl', MainCtrl);
 
-    function MainCtrl(){
+
+
+    function MainCtrl() {
         var main = this;
-        console.log(1);
     }
+
 
 })();
