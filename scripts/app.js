@@ -19,21 +19,4 @@
             'ngTouch'
         ])
 
-        .config(function($stateProvider) {
-            $stateProvider.state('/', {
-                url: "/resume",
-                templateUrl: "pages/resume/resume.html",
-                controller: "ResumeCtrl as resume",
-                resolve: {
-                    store: function ($ocLazyLoad) {
-                        return $ocLazyLoad.load(
-                            {
-                                name: "resume",
-                                files: ["pages/resume/resume.js"]
-                            })
-                    }
-                }
-            })
-        });
-
 })();

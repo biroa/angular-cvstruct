@@ -1,5 +1,5 @@
-'use strict';
-
+(function () {
+    'use strict';
 /**
  * @ngdoc function
  * @name publicHtmlApp.controller:MainCtrl
@@ -10,9 +10,10 @@
 angular.module('publicHtmlApp')
     
     .controller('MainCtrl', MainCtrl);
-    MainCtrl.$inject = ['$injector', '$ocLazyLoad', '$state'];
 
-    function MainCtrl($injector, $ocLazyLoad, $state){
+    function MainCtrl(){
         var main = this;
-        $state.go("/");
+        console.log(1);
     }
+
+})();
