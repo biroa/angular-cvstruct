@@ -12,7 +12,7 @@ angular.module('publicHtmlApp', []).
                         pane.selected = false;
                     });
                     pane.selected = true;
-                }
+                };
 
                 this.addPane = function(pane) {
                     if (panes.length == 0) $scope.select(pane);
@@ -45,4 +45,4 @@ angular.module('publicHtmlApp', []).
             '</div>',
             replace: true
         };
-    })
+    });
