@@ -6,7 +6,6 @@
         .controller('MainCtrl', MainCtrl);
 
 
-
     function MainCtrl() {
         var main = this;
     }
