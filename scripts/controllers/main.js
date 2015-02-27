@@ -11,7 +11,7 @@
         .module('publicHtmlApp')
         .controller('MainCtrl', MainCtrl);
 
-        MainCtrl.$inject = [$scope];
+        MainCtrl.$inject = ['$scope'];
 
     function MainCtrl($scope) {
         console.log('Loading FirstTabCtrl');
