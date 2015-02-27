@@ -3,7 +3,7 @@
 
     angular
         .module('publicHtmlApp', [
-            'ui.router',
+            'ngRoute',
             'ngAnimate',
             'ngCookies',
             'ngResource',
