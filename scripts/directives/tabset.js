@@ -1,5 +1,5 @@
-angular.module('bootstrap.tabset', [])
-    .directive('tabset', function () {
+angular.module('bootstrap.lazytabset', [])
+    .directive('lazytabset', function () {
         return {
             restrict: 'E',
             replace: true,
@@ -38,11 +38,11 @@ angular.module('bootstrap.tabset', [])
             '</div>'
         };
     })
-    .directive('tab', function () {
+    .directive('lazytab ', function () {
         return {
             restrict: 'E',
             replace: true,
-            require: '^tabset',
+            require: '^lazytabset',
             scope: {
                 title: '@',
                 templateUrl: '@',
