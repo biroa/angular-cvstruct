@@ -7,11 +7,13 @@
  * # AboutCtrl
  * Controller of the publicHtmlApp
  */
-angular.module('publicHtmlApp')
-    .controller('AboutCtrl', function ($scope) {
-        $scope.awesomeThings = [
-            'HTML5 Boilerplate',
-            'AngularJS',
-            'Karma'
-        ];
-    });
+angular
+    .module('publicHtmlApp')
+    .controller('AboutCtrl', AboutCtrl);
+
+AboutCtrl.$inject = [$scope];
+
+function AboutCtrl($scope) {
+    console.log('Loading FirstTabCtrl');
+    $scope.title = 'Second Tab';
+}
