@@ -11,7 +11,7 @@ angular
     .module('publicHtmlApp')
     .controller('AboutCtrl', AboutCtrl);
 
-AboutCtrl.$inject = [$scope];
+AboutCtrl.$inject = ['$scope'];
 
 function AboutCtrl($scope) {
     console.log('Loading FirstTabCtrl');
