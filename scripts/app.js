@@ -9,6 +9,6 @@
             'ngResource',
             'ngSanitize',
             'ngTouch',
-            'bootstrap.tabset'
+            'lazyTabset'
         ]);
 })();

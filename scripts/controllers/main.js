@@ -7,13 +7,13 @@
  * # AboutCtrl
  * Controller of the publicHtmlApp
  */
-    angular
-        .module('publicHtmlApp')
-        .controller('MainCtrl', MainCtrl);
+angular
+    .module('publicHtmlApp')
+    .controller('MainController', MainController);
 
-        MainCtrl.$inject = ['$scope'];
+MainController.$inject = ['$scope'];
 
-    function MainCtrl($scope) {
-        console.log('Loading FirstTabCtrl');
-        $scope.title = 'First Tab';
-    }
+function MainController($scope) {
+    console.log('Loading FirstTabCtrl');
+    $scope.title = 'First Tab';
+}

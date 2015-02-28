@@ -9,11 +9,11 @@
  */
 angular
     .module('publicHtmlApp')
-    .controller('AboutCtrl', AboutCtrl);
+    .controller('AboutController', AboutController);
 
-AboutCtrl.$inject = ['$scope'];
+AboutController.$inject = ['$scope'];
 
-function AboutCtrl($scope) {
+function AboutController($scope) {
     console.log('Loading FirstTabCtrl');
     $scope.title = 'Second Tab';
 }
